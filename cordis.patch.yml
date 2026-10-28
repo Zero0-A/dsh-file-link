@@ -1,0 +1,5 @@
+# dsh-file-link-menu —— 聊天文件链接右键菜单（客户端插件）
+# 由 profile 的 dsh.profile.bundles 收录后，本 patch 把自己的 Loader 条目插进组合。
+- insert:
+    - id: file-link-menu
+      name: dsh-file-link-menu
