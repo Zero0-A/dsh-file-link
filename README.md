@@ -51,6 +51,13 @@ dsh plugin --profile web add "E:\project\dsh-file-link"
 dsh --profile web --dump-config | grep file-link   # 只读校验
 ```
 
+### 方式三：npm（发布后）
+
+```sh
+# 插件页/插件管理器按包名安装
+dsh plugin --profile web add dsh-file-link
+```
+
 > Desktop profile 由 Electron 独占管理，`dsh plugin --profile desktop` 会被拒绝；桌面端请用方式一或直接管理插件页。
 
 ## 启用 / 停用
