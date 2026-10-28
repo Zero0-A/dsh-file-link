@@ -1,5 +1,5 @@
 {
-  "name": "dsh-file-link-menu",
+  "name": "dsh-file-link",
   "version": "1.0.0",
   "description": "DSH 聊天文件链接右键菜单：打开文件 / 打开文件所在目录 / 复制文件地址。",
   "keywords": [
@@ -37,11 +37,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Zero0-A/dsh-file-link-menu.git"
+    "url": "git+https://github.com/Zero0-A/dsh-file-link.git"
   },
-  "homepage": "https://github.com/Zero0-A/dsh-file-link-menu#readme",
+  "homepage": "https://github.com/Zero0-A/dsh-file-link#readme",
   "bugs": {
-    "url": "https://github.com/Zero0-A/dsh-file-link-menu/issues"
+    "url": "https://github.com/Zero0-A/dsh-file-link/issues"
   },
   "publishConfig": {
     "access": "public"

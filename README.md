@@ -1,6 +1,6 @@
-# dsh-file-link-menu
+# dsh-file-link
 
-> GitHub: <https://github.com/Zero0-A/dsh-file-link-menu>
+> GitHub: <https://github.com/Zero0-A/dsh-file-link>
 
 在 DSH（DeepSeek Harness）Web 聊天里**右键文件链接**，弹出与 DSH 同风格的菜单：
 
@@ -36,19 +36,19 @@
 2. 安装本地插件，路径填本仓库的绝对路径，例如：
 
    ```
-   E:\project\dsh-file-link-menu
+   E:\project\dsh-file-link
    ```
 
 3. 安装完成后插件会出现在当前 profile 的 bundle 列表并立即生效（返回 `applied` 时无需重启；页面刷新一次更稳）。
 
-> 本地目录以符号链接方式安装（`node_modules/dsh-file-link-menu -> E:\project\dsh-file-link-menu`），
+> 本地目录以符号链接方式安装（`node_modules/dsh-file-link -> E:\project\dsh-file-link`），
 > 因此改完源码刷新页面即可；若改了 `package.json` 的 `dsh` 声明，重新安装/重启应用一次。
 
 ### 方式二：命令行（web 等可自管 profile）
 
 ```sh
-dsh plugin --profile web add "E:\project\dsh-file-link-menu"
-dsh --profile web --dump-config | grep file-link-menu   # 只读校验
+dsh plugin --profile web add "E:\project\dsh-file-link"
+dsh --profile web --dump-config | grep file-link   # 只读校验
 ```
 
 > Desktop profile 由 Electron 独占管理，`dsh plugin --profile desktop` 会被拒绝；桌面端请用方式一或直接管理插件页。
@@ -56,7 +56,7 @@ dsh --profile web --dump-config | grep file-link-menu   # 只读校验
 ## 启用 / 停用
 
 - 停用：从 profile 的 `dsh.profile.bundles` 移除，或在 `cordis.patch.yml` 写入
-  `- id: file-link-menu\n  disabled: true` 后重启 / 重新加载。
+  `- id: file-link\n  disabled: true` 后重启 / 重新加载。
 - 本插件不修改任何 DSH 原生行为，只监听文件链接上的 `contextmenu`；普通文本、外链右键仍是浏览器/DSH 原生菜单。
 
 ## 测试
@@ -75,7 +75,7 @@ node test/detect.test.mjs
 ## 文件结构
 
 ```
-dsh-file-link-menu/
+dsh-file-link/
 ├── package.json          # dsh.bundle.patch + dsh.client(platform web)
 ├── cordis.patch.yml      # 把自己插入 profile Loader 组合
 ├── lib/

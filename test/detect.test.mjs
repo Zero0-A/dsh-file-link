@@ -79,7 +79,7 @@ function fakeRequire(spec) {
 	throw new Error("unexpected require: " + spec);
 }
 runInNewContext(source, { window, document, Element, HTMLElement, URL, console }, { filename: "client.js" });
-assert.equal(captured.id, "dsh-file-link-menu");
+assert.equal(captured.id, "dsh-file-link");
 const exportsObject = captured.factory(fakeRequire);
 const test = exportsObject.__test;
 assert.ok(test, "exports.__test present");
