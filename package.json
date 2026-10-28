@@ -1,8 +1,17 @@
 {
   "name": "dsh-file-link-menu",
   "version": "1.0.0",
-  "private": true,
   "description": "DSH 聊天文件链接右键菜单：打开文件 / 打开文件所在目录 / 复制文件地址。",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "context-menu",
+    "file-link",
+    "right-click"
+  ],
+  "author": "Zero0-A",
+  "license": "MIT",
   "type": "module",
   "main": "lib/index.js",
   "exports": {
@@ -15,6 +24,9 @@
     "cordis.patch.yml",
     "README.md"
   ],
+  "engines": {
+    "node": ">=20"
+  },
   "dsh": {
     "bundle": {
       "patch": "./cordis.patch.yml"
@@ -23,5 +35,15 @@
       "platform": "web"
     }
   },
-  "license": "MIT"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zero0-A/dsh-file-link-menu.git"
+  },
+  "homepage": "https://github.com/Zero0-A/dsh-file-link-menu#readme",
+  "bugs": {
+    "url": "https://github.com/Zero0-A/dsh-file-link-menu/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
 }

@@ -1,5 +1,7 @@
 # dsh-file-link-menu
 
+> GitHub: <https://github.com/Zero0-A/dsh-file-link-menu>
+
 在 DSH（DeepSeek Harness）Web 聊天里**右键文件链接**，弹出与 DSH 同风格的菜单：
 
 | 菜单项 | 行为 |
